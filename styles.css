@@ -1,0 +1,152 @@
+:root {
+  --navy: #1d2747;
+  --navy-soft: #3b4466;
+  --paper: #fbfaf7;
+  --line: #d9dbe3;
+  --tile: #2b3f9e;
+  --serif: "Cormorant Garamond", Garamond, "Times New Roman", serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--navy);
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 { font-weight: 600; margin: 0; }
+a { color: inherit; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+/* Navegación */
+.nav {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: .8rem clamp(1rem, 4vw, 3rem);
+  background: rgba(251, 250, 247, .92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--line);
+}
+.nav__brand {
+  text-decoration: none; text-transform: uppercase;
+  letter-spacing: .3em; font-size: 1.1rem; font-weight: 600;
+}
+.nav nav { display: flex; gap: clamp(.8rem, 2.5vw, 2rem); }
+.nav nav a {
+  text-decoration: none; font-size: 1rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--navy-soft); white-space: nowrap;
+}
+.nav nav a:hover { color: var(--navy); text-decoration: underline; text-underline-offset: 4px; }
+
+/* Portada */
+.hero {
+  position: relative; overflow: hidden;
+  min-height: calc(100svh - 56px);
+  display: grid; place-items: center end;
+  padding: 3rem clamp(1rem, 8vw, 8rem);
+  background: #fff;
+}
+.hero__art {
+  position: absolute; left: 1%; top: -3%;
+  height: 125%; width: auto; max-width: none;
+  opacity: .95;
+}
+.hero__text { position: relative; text-align: center; }
+.hero h1 {
+  font-size: clamp(3.4rem, 10vw, 7.5rem); font-weight: 400;
+  text-transform: uppercase; letter-spacing: .14em; line-height: 1;
+  margin-right: -.14em;
+}
+.hero__tag {
+  margin: .6rem 0 0; text-transform: uppercase;
+  letter-spacing: .16em; font-size: clamp(1rem, 2.4vw, 1.5rem);
+}
+.rule { display: block; width: 6rem; height: 1px; background: var(--navy); margin: 1.4rem auto 2rem; }
+.btn {
+  display: inline-block; padding: .6rem 1.6rem;
+  border: 1px solid var(--navy); text-decoration: none;
+  text-transform: uppercase; letter-spacing: .14em; font-size: .95rem;
+  transition: background .2s, color .2s;
+}
+.btn:hover, .btn:focus-visible { background: var(--navy); color: #fff; }
+
+.intro {
+  max-width: 40rem; margin: 0 auto; padding: 4rem 1rem 1rem;
+  text-align: center; font-size: 1.45rem; font-style: italic; color: var(--navy-soft);
+}
+
+/* Carta */
+.carta {
+  max-width: 46rem; margin: 0 auto; padding: 1rem 1rem 2rem;
+}
+.menu { padding: 3.5rem 0 1rem; scroll-margin-top: 60px; }
+.menu h2 {
+  text-align: center; text-transform: uppercase;
+  font-size: clamp(1.8rem, 5vw, 2.6rem); letter-spacing: .06em;
+  margin-bottom: 2.2rem;
+}
+.menu h2::after {
+  content: ""; display: block; width: 3rem; height: 1px;
+  background: var(--navy); margin: .9rem auto 0;
+}
+
+.dishes { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.8rem; }
+.dish__head { display: flex; align-items: baseline; gap: .6rem; }
+.dish__head h3 { font-size: 1.35rem; font-weight: 700; }
+.dish__head .price { margin-left: auto; }
+.dish p { margin: .25rem 0 0; max-width: 34rem; color: var(--navy-soft); }
+.price { font-variant-numeric: lining-nums tabular-nums; font-weight: 600; white-space: nowrap; }
+.price small { font-weight: 400; font-size: .8em; }
+
+.market { width: 100%; border-collapse: collapse; font-size: 1.3rem; }
+.market th, .market td { padding: .55rem 0; border-bottom: 1px dotted var(--line); }
+.market th { text-align: left; font-weight: 500; }
+.market td { text-align: right; color: var(--navy-soft); font-size: 1.1rem; font-variant-numeric: lining-nums; }
+.market td.price { color: var(--navy); font-size: 1.3rem; width: 6.5rem; }
+
+.fresh {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+  margin-top: 1.6rem; padding: 1rem 1.2rem;
+  border: 1px solid var(--navy);
+  font-size: 1.45rem; font-weight: 700;
+}
+.fresh span:last-child { font-style: italic; font-weight: 500; }
+
+.allergens {
+  max-width: 46rem; margin: 2rem auto 4rem; padding: 0 1rem;
+  text-align: center; font-size: 1rem; font-weight: 600; color: var(--navy-soft);
+}
+
+/* Pie: guiño al mantel de cuadros azules */
+.footer {
+  color: #fff; text-align: center; padding: 3.5rem 1rem;
+  background-color: var(--navy);
+  background-image:
+    linear-gradient(45deg, rgba(43,63,158,.55) 25%, transparent 25%, transparent 75%, rgba(43,63,158,.55) 75%),
+    linear-gradient(45deg, rgba(43,63,158,.55) 25%, transparent 25%, transparent 75%, rgba(43,63,158,.55) 75%);
+  background-size: 56px 56px;
+  background-position: 0 0, 28px 28px;
+}
+.footer p { margin: .2rem 0; letter-spacing: .14em; text-transform: uppercase; }
+.footer__brand { font-size: 2rem; letter-spacing: .3em !important; }
+.footer__small { font-size: .85rem; opacity: .75; text-transform: none !important; letter-spacing: .04em !important; margin-top: 1rem !important; }
+
+@media (max-width: 640px) {
+  body { font-size: 1.12rem; }
+  .nav nav a { font-size: .8rem; letter-spacing: .04em; }
+  .hide-sm { display: none; }
+  .nav__brand { font-size: .95rem; letter-spacing: .2em; }
+  .hero { place-items: end center; padding-bottom: 4rem; }
+  .hero__art { height: 95%; left: -25%; opacity: .35; }
+  .market { font-size: 1.15rem; }
+  .market td { font-size: 1rem; }
+  .market td.price { width: 5.5rem; font-size: 1.15rem; }
+}

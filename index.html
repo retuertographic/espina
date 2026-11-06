@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Espina · Cocina de mar y mercado</title>
+  <meta name="description" content="Espina, cocina de mar y mercado. Gambas al ajillo, lapas, zamburiñas, pescado fresco según peso, paella de mariscos y tabla de freidurías.">
+  <meta property="og:title" content="Espina · Cocina de mar y mercado">
+  <meta property="og:description" content="Producto del mar y del mercado, directo a la mesa.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="nav__brand" href="#inicio">Espina</a>
+    <nav aria-label="Secciones">
+      <a href="#entrantes">Entrantes</a>
+      <a href="#mercado"><span class="hide-sm">Del </span>mercado</a>
+      <a href="#compartir"><span class="hide-sm">Para </span>compartir</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <img class="hero__art" src="assets/espina.svg" alt="">
+      <div class="hero__text">
+        <h1>Espina</h1>
+        <p class="hero__tag">Cocina de mar y mercado</p>
+        <span class="rule" aria-hidden="true"></span>
+        <a class="btn" href="#carta">Ver la carta</a>
+      </div>
+    </section>
+
+    <section class="intro">
+      <p>Producto del mar y del mercado, tratado con sencillez. Fritura al punto, mariscos a la plancha y pescado fresco que se sirve según peso.</p>
+    </section>
+
+    <div class="carta" id="carta">
+      <section class="menu" id="entrantes">
+        <h2>Entrantes</h2>
+        <ul class="dishes">
+          <li class="dish">
+            <div class="dish__head"><h3>Gambas al ajillo</h3><span class="price">11,50 €</span></div>
+            <p>Jugosas gambas salteadas con ajo, aceite de oliva y un sutil toque picante.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__head"><h3>Gambas al almogrote</h3><span class="price">11,50 €</span></div>
+            <p>Gambas bañadas en una irresistible salsa cremosa de almogrote canario, intensa y llena de sabor.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__head"><h3>Ensaladilla</h3><span class="price">6,95 €</span></div>
+            <p>Un clásico irresistible, de textura suave y cremosa, elaborado al estilo tradicional.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__head"><h3>Salpicón de pulpo</h3><span class="price">9,90 €</span></div>
+            <p>Tiernos bocados de pulpo acompañados de verduras frescas y un delicado aliño de la casa.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__head"><h3>Croquetas del día</h3><span class="price">7,50 €</span></div>
+            <p>Doradas y crujientes por fuera, con un corazón suave y cremoso que se deshace en cada bocado.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="menu" id="mercado">
+        <h2>Del mercado a la mesa</h2>
+        <table class="market">
+          <caption class="sr-only">Raciones del mercado con cantidad y precio</caption>
+          <thead class="sr-only"><tr><th>Producto</th><th>Cantidad</th><th>Precio</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Lapas</th><td>14 uds.</td><td class="price">9,75 €</td></tr>
+            <tr><th scope="row">Zamburiñas</th><td>1 ud.</td><td class="price">1,97 €</td></tr>
+            <tr><th scope="row">Calamar a la romana</th><td>200–215 g</td><td class="price">11,95 €</td></tr>
+            <tr><th scope="row">Chipirones</th><td>200–215 g</td><td class="price">9,90 €</td></tr>
+            <tr><th scope="row">Boquerones</th><td>200–215 g</td><td class="price">9,25 €</td></tr>
+            <tr><th scope="row">Gueldes</th><td>200–215 g</td><td class="price">8,90 €</td></tr>
+            <tr><th scope="row">Gambones</th><td>8 uds.</td><td class="price">10,75 €</td></tr>
+          </tbody>
+        </table>
+        <div class="fresh">
+          <span>Pescado fresco</span>
+          <span>según peso</span>
+        </div>
+      </section>
+
+      <section class="menu" id="compartir">
+        <h2>Para compartir</h2>
+        <ul class="dishes">
+          <li class="dish">
+            <div class="dish__head"><h3>Paella de mariscos</h3><span class="price">18,90 € <small>p.p.</small></span></div>
+            <p>Arroz cocinado con caldo marinero y una especial selección de mariscos. Sabor del mar.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__head"><h3>Cachopo</h3><span class="price">35,50 €</span></div>
+            <p>Crujiente y dorado por fuera, con un interior de tierna carne rellena de jamón serrano y queso manchego fundido. Una combinación irresistible de sabores tradicionales.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__head"><h3>Tabla variada de freidurías</h3><span class="price">29,90 €</span></div>
+            <p>150 g de calamar, 150 g de chipirones, 150 g de boquerones, 150 g de gueldes y ración de papas fritas con alioli y mojo.</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <aside class="allergens">
+      <p>Debido a los diferentes procesos de elaboración de nuestros platos, no podemos excluir la presencia accidental de alérgenos. Por lo tanto, todos los alimentos de nuestra carta pueden contener alérgenos. Consulte a nuestro personal.</p>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__brand">Espina</p>
+    <p>Cocina de mar y mercado</p>
+    <p class="footer__small">Precios con IVA incluido.</p>
+  </footer>
+</body>
+</html>
