@@ -15,3 +15,9 @@ El flujo `.github/workflows/pages.yml` publica la web en GitHub Pages en cada pu
 Si es la primera vez, activa Pages en *Settings → Pages → Source: GitHub Actions*.
 
 Contenido multimedia: `assets/video/cabecera.mp4` (vídeo de fondo de la cabecera, sin audio) y `assets/img/` (fotos del cachopo, en 1600 px y 800 px).
+
+## Reservas y contacto
+
+- Dirección, teléfono, mapa (Google Maps) y burbuja flotante de WhatsApp (+34 663 74 49 76).
+- El formulario de reserva no necesita servidor: `assets/reserva.js` redacta la solicitud y la abre en WhatsApp para que el cliente la envíe.
+- Horario: pendiente (hay un comentario `HORARIO` en el HTML donde va).
