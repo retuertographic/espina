@@ -2,7 +2,8 @@
 
 Web estática del restaurante Espina, con la carta completa (Entrantes, Del mercado a la mesa, Para compartir).
 
-- `index.html`: página única con la carta
+- `index.html`: página única con la carta (español)
+- `en/index.html`: versión en inglés (los nombres de los platos se mantienen en español con su traducción debajo)
 - `styles.css`: estilos (tipografía Cormorant Garamond, azul marino de la carta)
 - `assets/espina.svg`: ilustración de la espina de pescado de la portada
 

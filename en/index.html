@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Espina · Sea and market cuisine</title>
+  <meta name="description" content="Espina, sea and market cuisine. Garlic prawns, limpets, queen scallops, fresh fish by weight, seafood paella and a mixed fried fish platter.">
+  <meta property="og:title" content="Espina · Sea and market cuisine">
+  <meta property="og:description" content="Produce from the sea and the market, straight to your table.">
+  <meta property="og:image" content="../assets/img/cachopo-mesa.jpg">
+  <link rel="alternate" hreflang="es" href="../">
+  <link rel="alternate" hreflang="en" href="./">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="nav__brand" href="#home">Espina</a>
+    <nav aria-label="Sections">
+      <a href="#starters">Starters</a>
+      <a href="#market"><span class="hide-sm">From the </span>market</a>
+      <a href="#sharing"><span class="hide-sm">To </span>share</a>
+      <a href="#gallery">Gallery</a>
+      <a class="nav__lang" href="../" hreflang="es" lang="es" title="Versión en español">ES</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="../assets/video/cabecera-poster.jpg" aria-hidden="true">
+        <source src="../assets/video/cabecera.mp4" type="video/mp4">
+      </video>
+      <img class="hero__art" src="../assets/espina.svg" alt="">
+      <div class="hero__text">
+        <h1>Espina</h1>
+        <p class="hero__tag">Sea and market cuisine</p>
+        <span class="rule" aria-hidden="true"></span>
+        <a class="btn" href="#menu">See the menu</a>
+      </div>
+    </section>
+
+    <section class="intro">
+      <p>Produce from the sea and the market, cooked simply. Perfectly fried fish, grilled shellfish and fresh fish served by weight.</p>
+    </section>
+
+    <div class="carta" id="menu">
+      <section class="menu" id="starters">
+        <h2>Starters</h2>
+        <ul class="dishes">
+          <li class="dish">
+            <div class="dish__head"><h3>Gambas al ajillo <span class="dish__alt">Garlic prawns</span></h3><span class="price">€11.50</span></div>
+            <p>Juicy prawns sautéed with garlic, olive oil and a subtle hint of chilli.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__head"><h3>Gambas al almogrote <span class="dish__alt">Prawns in almogrote sauce</span></h3><span class="price">€11.50</span></div>
+            <p>Prawns in an irresistible creamy Canarian almogrote sauce (aged cheese, garlic and pepper), intense and full of flavour.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__head"><h3>Ensaladilla <span class="dish__alt">Spanish potato salad</span></h3><span class="price">€6.95</span></div>
+            <p>An irresistible classic, smooth and creamy, made the traditional way.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__head"><h3>Salpicón de pulpo <span class="dish__alt">Octopus salad</span></h3><span class="price">€9.90</span></div>
+            <p>Tender pieces of octopus with fresh vegetables and a delicate house dressing.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__head"><h3>Croquetas del día <span class="dish__alt">Croquettes of the day</span></h3><span class="price">€7.50</span></div>
+            <p>Golden and crispy on the outside, with a soft, creamy centre that melts in every bite.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="menu" id="market">
+        <h2>From the market to the table</h2>
+        <table class="market">
+          <caption class="sr-only">Market dishes with quantity and price</caption>
+          <thead class="sr-only"><tr><th>Dish</th><th>Quantity</th><th>Price</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Lapas <span class="dish__alt">Limpets</span></th><td>14 pcs</td><td class="price">€9.75</td></tr>
+            <tr><th scope="row">Zamburiñas <span class="dish__alt">Queen scallops</span></th><td>1 pc</td><td class="price">€1.97</td></tr>
+            <tr><th scope="row">Calamar a la romana <span class="dish__alt">Fried squid rings</span></th><td>200–215 g</td><td class="price">€11.95</td></tr>
+            <tr><th scope="row">Chipirones <span class="dish__alt">Baby squid</span></th><td>200–215 g</td><td class="price">€9.90</td></tr>
+            <tr><th scope="row">Boquerones <span class="dish__alt">Fried anchovies</span></th><td>200–215 g</td><td class="price">€9.25</td></tr>
+            <tr><th scope="row">Gueldes <span class="dish__alt">Fried whitebait</span></th><td>200–215 g</td><td class="price">€8.90</td></tr>
+            <tr><th scope="row">Gambones <span class="dish__alt">King prawns</span></th><td>8 pcs</td><td class="price">€10.75</td></tr>
+          </tbody>
+        </table>
+        <div class="fresh">
+          <span>Fresh fish</span>
+          <span>priced by weight</span>
+        </div>
+      </section>
+
+      <section class="menu" id="sharing">
+        <h2>To share</h2>
+        <ul class="dishes">
+          <li class="dish">
+            <div class="dish__head"><h3>Paella de mariscos <span class="dish__alt">Seafood paella</span></h3><span class="price">€18.90 <small>per person</small></span></div>
+            <p>Rice cooked in a rich seafood stock with a special selection of shellfish. A taste of the sea.</p>
+          </li>
+          <li class="dish dish--featured">
+            <figure class="dish__photo">
+              <img src="../assets/img/cachopo-pizarra-800.jpg" srcset="../assets/img/cachopo-pizarra-800.jpg 800w, ../assets/img/cachopo-pizarra.jpg 1600w" sizes="(max-width: 760px) 100vw, 44rem" width="1600" height="1200" loading="lazy" alt="Breaded cachopo served on slate with chips and roasted red and green peppers">
+            </figure>
+            <div class="dish__head"><h3>Cachopo <span class="dish__alt">Asturian stuffed breaded beef</span></h3><span class="price">€35.50</span></div>
+            <p>Crispy and golden on the outside, with tender beef inside, filled with Serrano ham and melted Manchego cheese. An irresistible combination of traditional flavours.</p>
+          </li>
+          <li class="dish">
+            <div class="dish__head"><h3>Tabla variada de freidurías <span class="dish__alt">Mixed fried fish platter</span></h3><span class="price">€29.90</span></div>
+            <p>150 g squid, 150 g baby squid, 150 g anchovies, 150 g whitebait and a portion of chips with aioli and mojo sauce.</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="gallery" id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery__grid">
+        <a class="gallery__item gallery__item--wide" href="../assets/img/cachopo-mesa.jpg"><img src="../assets/img/cachopo-mesa-800.jpg" srcset="../assets/img/cachopo-mesa-800.jpg 800w, ../assets/img/cachopo-mesa.jpg 1600w" sizes="(max-width: 760px) 100vw, 66vw" width="1600" height="1200" loading="lazy" alt="Cachopo with chips on slate on the blue checked tablecloth"></a>
+        <a class="gallery__item" href="../assets/img/cachopo-detalle.jpg"><img src="../assets/img/cachopo-detalle-800.jpg" width="800" height="600" loading="lazy" alt="Close-up of the crispy coating with roasted peppers"></a>
+        <a class="gallery__item" href="../assets/img/cachopo-patatas.jpg"><img src="../assets/img/cachopo-patatas-800.jpg" width="800" height="600" loading="lazy" alt="Golden cachopo next to homemade chips"></a>
+        <a class="gallery__item gallery__item--wide" href="../assets/img/cachopo-pizarra.jpg"><img src="../assets/img/cachopo-pizarra-800.jpg" srcset="../assets/img/cachopo-pizarra-800.jpg 800w, ../assets/img/cachopo-pizarra.jpg 1600w" sizes="(max-width: 760px) 100vw, 66vw" width="1600" height="1200" loading="lazy" alt="A serving of cachopo on slate"></a>
+      </div>
+    </section>
+
+    <aside class="allergens">
+      <p>Due to the different preparation processes of our dishes, we cannot rule out the accidental presence of allergens. Therefore, all items on our menu may contain allergens. Please ask our staff.</p>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__brand">Espina</p>
+    <p>Sea and market cuisine</p>
+    <p class="footer__small">Prices include VAT.</p>
+  </footer>
+  <script>
+    // Respect "reduce motion": keep the header on the still image.
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const v = document.querySelector('.hero__video');
+      if (v) { v.removeAttribute('autoplay'); v.pause(); }
+    }
+  </script>
+</body>
+</html>

@@ -115,6 +115,11 @@ a { color: inherit; }
 .dish__head { display: flex; align-items: baseline; gap: .6rem; }
 .dish__head h3 { font-size: 1.35rem; font-weight: 700; }
 .dish__head .price { margin-left: auto; }
+.dish__alt { display: block; font-size: .85em; font-weight: 400; font-style: italic; color: var(--navy-soft); }
+.market .dish__alt { font-size: .78em; }
+.nav nav a.nav__lang {
+  border: 1px solid currentColor; padding: .05rem .45rem; color: var(--navy); font-weight: 600;
+}
 .dish p { margin: .25rem 0 0; max-width: 34rem; color: var(--navy-soft); }
 .dish__photo { margin: 0 0 1rem; overflow: hidden; }
 .dish__photo img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
