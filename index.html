@@ -7,6 +7,7 @@
   <meta name="description" content="Espina, cocina de mar y mercado. Gambas al ajillo, lapas, zamburiñas, pescado fresco según peso, paella de mariscos y tabla de freidurías.">
   <meta property="og:title" content="Espina · Cocina de mar y mercado">
   <meta property="og:description" content="Producto del mar y del mercado, directo a la mesa.">
+  <meta property="og:image" content="assets/img/cachopo-mesa.jpg">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,11 +21,15 @@
       <a href="#entrantes">Entrantes</a>
       <a href="#mercado"><span class="hide-sm">Del </span>mercado</a>
       <a href="#compartir"><span class="hide-sm">Para </span>compartir</a>
+      <a href="#galeria">Galería</a>
     </nav>
   </header>
 
   <main>
     <section class="hero" id="inicio">
+      <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="assets/video/cabecera-poster.jpg" aria-hidden="true">
+        <source src="assets/video/cabecera.mp4" type="video/mp4">
+      </video>
       <img class="hero__art" src="assets/espina.svg" alt="">
       <div class="hero__text">
         <h1>Espina</h1>
@@ -93,7 +98,10 @@
             <div class="dish__head"><h3>Paella de mariscos</h3><span class="price">18,90 € <small>p.p.</small></span></div>
             <p>Arroz cocinado con caldo marinero y una especial selección de mariscos. Sabor del mar.</p>
           </li>
-          <li class="dish">
+          <li class="dish dish--featured">
+            <figure class="dish__photo">
+              <img src="assets/img/cachopo-pizarra-800.jpg" srcset="assets/img/cachopo-pizarra-800.jpg 800w, assets/img/cachopo-pizarra.jpg 1600w" sizes="(max-width: 760px) 100vw, 44rem" width="1600" height="1200" loading="lazy" alt="Cachopo empanado servido en pizarra con papas fritas, pimiento rojo y pimiento verde asados">
+            </figure>
             <div class="dish__head"><h3>Cachopo</h3><span class="price">35,50 €</span></div>
             <p>Crujiente y dorado por fuera, con un interior de tierna carne rellena de jamón serrano y queso manchego fundido. Una combinación irresistible de sabores tradicionales.</p>
           </li>
@@ -105,6 +113,16 @@
       </section>
     </div>
 
+    <section class="gallery" id="galeria">
+      <h2>Galería</h2>
+      <div class="gallery__grid">
+        <a class="gallery__item gallery__item--wide" href="assets/img/cachopo-mesa.jpg"><img src="assets/img/cachopo-mesa-800.jpg" srcset="assets/img/cachopo-mesa-800.jpg 800w, assets/img/cachopo-mesa.jpg 1600w" sizes="(max-width: 760px) 100vw, 66vw" width="1600" height="1200" loading="lazy" alt="Cachopo con papas fritas sobre pizarra en la mesa de cuadros azules"></a>
+        <a class="gallery__item" href="assets/img/cachopo-detalle.jpg"><img src="assets/img/cachopo-detalle-800.jpg" width="800" height="600" loading="lazy" alt="Detalle del empanado crujiente con pimientos asados"></a>
+        <a class="gallery__item" href="assets/img/cachopo-patatas.jpg"><img src="assets/img/cachopo-patatas-800.jpg" width="800" height="600" loading="lazy" alt="Cachopo dorado junto a papas fritas caseras"></a>
+        <a class="gallery__item gallery__item--wide" href="assets/img/cachopo-pizarra.jpg"><img src="assets/img/cachopo-pizarra-800.jpg" srcset="assets/img/cachopo-pizarra-800.jpg 800w, assets/img/cachopo-pizarra.jpg 1600w" sizes="(max-width: 760px) 100vw, 66vw" width="1600" height="1200" loading="lazy" alt="Ración de cachopo servida en pizarra"></a>
+      </div>
+    </section>
+
     <aside class="allergens">
       <p>Debido a los diferentes procesos de elaboración de nuestros platos, no podemos excluir la presencia accidental de alérgenos. Por lo tanto, todos los alimentos de nuestra carta pueden contener alérgenos. Consulte a nuestro personal.</p>
     </aside>
@@ -115,5 +133,12 @@
     <p>Cocina de mar y mercado</p>
     <p class="footer__small">Precios con IVA incluido.</p>
   </footer>
+  <script>
+    // Respeta "reducir movimiento": deja la cabecera en la imagen fija.
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const v = document.querySelector('.hero__video');
+      if (v) { v.removeAttribute('autoplay'); v.pause(); }
+    }
+  </script>
 </body>
 </html>

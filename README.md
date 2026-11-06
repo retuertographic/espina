@@ -7,3 +7,10 @@ Web estática del restaurante Espina, con la carta completa (Entrantes, Del merc
 - `assets/espina.svg`: ilustración de la espina de pescado de la portada
 
 Sin dependencias ni proceso de compilación: abre `index.html` o publícala con GitHub Pages (rama, carpeta raíz).
+
+## Publicación
+
+El flujo `.github/workflows/pages.yml` publica la web en GitHub Pages en cada push.
+Si es la primera vez, activa Pages en *Settings → Pages → Source: GitHub Actions*.
+
+Contenido multimedia: `assets/video/cabecera.mp4` (vídeo de fondo de la cabecera, sin audio) y `assets/img/` (fotos del cachopo, en 1600 px y 800 px).
